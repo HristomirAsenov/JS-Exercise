@@ -1,0 +1,20 @@
+<div class="offer-details">
+    <h1>{{ name }}</h1>
+    <div class="info">
+        <img src="{{ imageUrl }}" alt="">
+        <div class="description">{{ description }}
+            <br>
+            <br>
+            <p> <strong>Buyers:</strong> {{ buyersCount }}</p>
+            <br>
+            <p class="price">${{ price }}</p>
+        </div>
+    </div>
+    <div class="actions">
+        <a href="/shoes/edit/{{ _id }}">Edit</a>
+        <a href="/shoes/delete/{{ _id}}">Delete</a>
+
+        <a href="">Buy</a>
+        <span>You bought it</span>
+    </div>
+</div>

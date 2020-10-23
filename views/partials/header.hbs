@@ -1,0 +1,20 @@
+<header>
+    <nav>
+        <ul>
+            {{#if isLoggedIn}}
+            <li>
+                <a href="/shoes/create">Create new offer</a>
+            </li>
+            {{>headerLogo}}
+            <li>
+                <a href="/user/profile">Welcome, {{fullName}}</a> |
+                <a href="/user/logout">Logout</a>
+            </li>
+            {{else}}
+            <li class="site-logo">Shoe</li>
+            {{>headerLogo}}
+            <li class="site-logo">Shelf</li>
+            {{/if}}
+        </ul>
+    </nav>
+</header>
